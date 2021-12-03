@@ -1,0 +1,18 @@
+{
+  intervention(id: 1) {
+    id
+  	intervention_start_time
+    intervention_end_time
+    status
+    building {
+      address {
+        number_and_street
+        suite_and_apartment
+        city
+        postal_code
+        country
+      }
+    }
+  }
+}
+

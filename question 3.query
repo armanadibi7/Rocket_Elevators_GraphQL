@@ -1,0 +1,23 @@
+{
+	employee(id:2) {
+    batteries {
+      id
+      building {
+        id
+        interventions {
+          id
+          status
+          
+        }
+        
+        buildingDetails {
+          information_key
+          value
+        }
+      }
+    }
+  }
+}
+
+
+
