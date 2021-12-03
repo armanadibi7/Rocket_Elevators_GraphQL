@@ -356,7 +356,7 @@ const RootQueryType = new GraphQLObjectType({
       description: "List of All Pending Interventions",
       resolve: async (parent, args) => {
         const [rows, fields] = await promisePool.query(
-          `SELECT * FROM interventions WHERE end_date IS NULL AND status = 'Pending'`
+          `SELECT * FROM interventions WHERE status = 'Pending'`
         );
         console.log(rows)
         return rows;
