@@ -278,7 +278,7 @@ const RootMutationType = new GraphQLObjectType({
        
         await promisePool.query(
           `UPDATE interventions
-          SET status = '${intervention.status}', start_date = '${today}'
+          SET status = '${intervention.status}', intervention_start = '${today}'
           WHERE id = ${args.id};
           `
         );
@@ -312,7 +312,7 @@ const RootMutationType = new GraphQLObjectType({
        
         await promisePool.query(
           `UPDATE interventions
-          SET status = '${intervention.status}', end_date = '${today}'
+          SET status = '${intervention.status}', intervention_end = '${today}'
           WHERE id = ${args.id};
           `
         );
