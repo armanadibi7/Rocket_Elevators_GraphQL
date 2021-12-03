@@ -49,7 +49,7 @@ var connection = mysql.createConnection({
   host: "codeboxx.cq6zrczewpu2.us-east-1.rds.amazonaws.com",
   user: "codeboxx",
   password: "Codeboxx1!",
-  database: "dominhannguyen",
+  database: "armanadibi",
 });
 
 let promisePool = connection.promise();
