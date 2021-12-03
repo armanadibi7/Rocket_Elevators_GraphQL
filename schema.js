@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 3000;
 //SEQUELIZE
 const { Sequelize, Model, DataTypes } = require("sequelize");
 
-const sequelize = new Sequelize("dominhannguyen", "codeboxx", "Codeboxx1!", {
+const sequelize = new Sequelize("armanadibi", "codeboxx", "Codeboxx1!", {
   host: "codeboxx.cq6zrczewpu2.us-east-1.rds.amazonaws.com",
   dialect: "mysql",
 });
